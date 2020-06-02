@@ -32,7 +32,7 @@ import com.pesados.purplepoint.api.model.user.UserService;
 @Configuration
 class LoadDatabase {
 	private static final Logger logger = LoggerFactory.getLogger(PurplePointApplication.class);
-
+/*
     @Bean
   CommandLineRunner initImageDatabase(ImageService service) throws IOException {
       logger.info("Finding resource \"sample.jpg\"");
@@ -108,4 +108,6 @@ class LoadDatabase {
             logger.info("Preloading " + service.saveDevice(new Device("4", new Location((float)41.402899, (float)2.121561, (float)100, (float)0), new User())));
         };
     }
+
+ */
 }

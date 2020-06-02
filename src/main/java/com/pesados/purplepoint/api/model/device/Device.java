@@ -18,12 +18,12 @@ public class Device {
 
     @Schema(description = "Location of the device.", required = true)
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name="location")
+    @JoinColumn(name="locationId")
     private Location location;
 
     @Schema(description = "Last active user.", required = true)
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name="user")
+    @JoinColumn(name="id")
     private User user;
 
     public Device() {}

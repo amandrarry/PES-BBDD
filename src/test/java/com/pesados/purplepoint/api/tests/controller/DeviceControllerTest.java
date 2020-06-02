@@ -92,8 +92,8 @@ public class DeviceControllerTest {
 
         JSONObject device = new JSONObject();
         device.put("firebaseToken", TestUtils.firebaseToken);
-        device.put("location", location);
-        device.put("user", user);
+        device.put("locationId", location);
+        device.put("id", user);
 
         JSONObject username = new JSONObject();
         username.put("username", "Puta");
