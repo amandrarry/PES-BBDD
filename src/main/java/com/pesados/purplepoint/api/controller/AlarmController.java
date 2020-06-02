@@ -86,8 +86,8 @@ public class AlarmController {
 		List<Device> result = new ArrayList<>();
 		// Parametros de la alarma
 		String alarmToken = alarm.getDeviceToken();
-		float alarmLatitude = alarm.getLocation().getLatitude();
-		float alarmLongitude = alarm.getLocation().getLongitude();
+		float alarmLatitude = alarm.getLocationId().getLatitude();
+		float alarmLongitude = alarm.getLocationId().getLongitude();
 
 		for (int i = 0; i < allDevices.size(); ++i) {
 			// Parametros para el Device tratado
@@ -172,7 +172,7 @@ public class AlarmController {
 			return alarmService.getAlarmById(id)
 				.map(alarm -> {
 					alarm.setUsername(newAlarm.getUsername());
-					alarm.setLocation(newAlarm.getLocation());
+					alarm.setLocationId(newAlarm.getLocationId());
 					return alarmService.saveAlarm((alarm));
 				}).orElseGet(() -> {
 					newAlarm.setAlarmId(id);

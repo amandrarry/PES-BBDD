@@ -63,7 +63,7 @@ public class AlarmControllerTest {
 
 		alarm.put("username", "amandi");
 		alarm.put("deviceToken", TestUtils.firebaseToken);
-		alarm.put("location", location);
+		alarm.put("locationId", location);
 
 		String token = TestUtils.doLogin(this.mockMvc);
 
@@ -88,7 +88,7 @@ public class AlarmControllerTest {
 
 		alarm.put("username", "isma");
 		alarm.put("deviceToken", TestUtils.firebaseToken);
-		alarm.put("location", location);
+		alarm.put("locationId", location);
 
 		String token = TestUtils.doLogin(this.mockMvc);
 		
@@ -125,7 +125,7 @@ public class AlarmControllerTest {
 		JSONObject alarm = new JSONObject();
 		alarm.put("username", "franco");
 		alarm.put("deviceToken", TestUtils.firebaseToken);
-		alarm.put("location", location);
+		alarm.put("locationId", location);
 		
 		String token = TestUtils.doLogin(this.mockMvc);
 
@@ -159,7 +159,7 @@ public class AlarmControllerTest {
 
 		alarm.put("username", "julia");
 		alarm.put("deviceToken", TestUtils.firebaseToken);
-		alarm.put("location", location);
+		alarm.put("locationId", location);
 
 		String token = TestUtils.doLogin(this.mockMvc);
 
@@ -191,7 +191,7 @@ public class AlarmControllerTest {
 		JSONObject alarm = new JSONObject();
 		alarm.put("username", "adri");
 		alarm.put("deviceToken", TestUtils.firebaseToken);
-		alarm.put("location", location);
+		alarm.put("locationId", location);
 
 		String token = TestUtils.doLogin(this.mockMvc);
 

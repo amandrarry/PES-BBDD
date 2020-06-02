@@ -21,14 +21,14 @@ public class Alarm {
 	@Schema(description = "Location of the user.", required = true)
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="locationId")
-	private Location location;
+	private Location locationId;
 
 	public Alarm() {}
 
 	public Alarm(String username, String deviceToken, Location location) {
 		this.deviceToken = deviceToken;
 		this.username = username;
-		this.location = location;
+		this.locationId = location;
 	}
 
 	public Long getAlarmId() {
@@ -51,11 +51,11 @@ public class Alarm {
 
 	public void setDeviceToken(String deviceToken) { this.deviceToken = deviceToken; }
 
-	public Location getLocation() {
-		return location;
+	public Location getLocationId() {
+		return locationId;
 	}
 
-	public void setLocation(Location location) {
-		this.location = location;
+	public void setLocationId(Location locationId) {
+		this.locationId = locationId;
 	}
 }
