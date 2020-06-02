@@ -1,0 +1,5 @@
+com/pesados/purplepoint/api/tests/PurplePointApplicationTests.class
+com/pesados/purplepoint/api/tests/controller/AlarmControllerTest.class
+com/pesados/purplepoint/api/tests/controller/UserControllerTest.class
+com/pesados/purplepoint/api/tests/controller/LocationControllerTest.class
+com/pesados/purplepoint/api/tests/controller/MapControllerTest.class
